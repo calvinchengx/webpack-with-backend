@@ -1,5 +1,5 @@
 {
-  "name": "testhmr",
+  "name": "webpack-with-backend",
   "version": "1.0.0",
   "description": "",
   "main": "entry.js",
@@ -13,8 +13,8 @@
   },
   "scripts": {
     "start": "npm run start-backend & npm run start-dev-server",
-    "start-backend": "python -m SimpleHTTPServer 5000",
-    "start-dev-server": "webpack-dev-server 'webpack-dev-server/client?/' webpack/hot/dev-server ./entry --hot --host 0.0.0.0 --content-base-target 'http://127.0.0.1:5000' --colors",
+    "start-backend": "python -m SimpleHTTPServer 4000",
+    "start-dev-server": "webpack-dev-server 'webpack-dev-server/client?/' webpack/hot/dev-server ./entry --hot --host 0.0.0.0 --port 7070 --content-base-target 'http://127.0.0.1:4000' --colors",
     "start2": "npm run start-backend2 & npm run start-dev-server",
     "start-backend2": "node server.js"
   },
