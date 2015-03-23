@@ -8,7 +8,6 @@ var Hello = require('./components/Hello');
 
 var ServerRender = function(req, res, next) {
   var markup = React.renderToString(<Hello />);
-  console.log(markup);
   var html = React.renderToStaticMarkup(<Html markup={markup} />);
   res.send('<!DOCTYPE html>' + html);
 };
