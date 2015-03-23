@@ -2,6 +2,11 @@
 'use strict';
 
 var React = require('react');
-var Hello = require('./components/Hello');
+var Router = require('react-router');
+var routes = require('./routes');
 
-React.render(<Hello />, document);
+document.addEventListener('DOMContentLoaded', function(event) {
+  Router.run(routes, Router.HistoryLocation, function(Handler, state) {
+    React.render(<Handler />, document);
+  });
+});
