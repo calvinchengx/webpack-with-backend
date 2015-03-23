@@ -13,4 +13,4 @@ This demo opens up a "backend" server that serves index.html, which can be any w
 
 It is worth noting that we use neither the `--inline` option nor the `<script src="http://localhost:8080/webpack-dev-server.js"` here, because in the both case the socket.io client in the webpack-dev-server runtime tries to connect to localhost, even on 'remote' devices that webpack-dev-server does not run on. Instead, we specify 'webpack-dev-server/client?/' to be the output entry in order to instruct the webpack-dev-server runtime to connect to "/", which is hostname-agnostic and works across multiple devices.
 
-`npm start` uses the `index.html` served by a nodejs express server. To demonstrate that this layout supports a language-agnostic backend, we created `server.js` and `npm run start2` uses the nodejs server as the backend instead.
+`npm start` uses the `index.html` served by a nodejs express server. To demonstrate that this layout supports a language-agnostic backend, `npm run start2` uses a simple python server.
