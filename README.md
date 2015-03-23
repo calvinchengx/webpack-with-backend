@@ -2,7 +2,7 @@ Hello Webpack
 ========================
 
 1. `npm install`  
-2. `npm start` (This runs webpack-dev-server and a simple nodejs express server); alternatively use `npm run start2` (which runs webpack-dev-server and a simple python server)
+2. `npm start` (This runs webpack-dev-server and a simple nodejs express server, which is an isomorphic solution); alternatively use `npm run start2` (which runs webpack-dev-server and a simple python server, which does not do server-side rendering at all)
 3. Visit http://localhost:7070 (or http://192.168.x.x:7070) on multiple devices
 4. Edit entry.js and hit save
 5. Watch the page updates itself across multiple devices
